@@ -1,0 +1,36 @@
+<div class="page-header">
+  <h1>lifetimes <small>how long ago was it really</small></h1>
+</div>
+<div>
+  <span>Your age: </span>
+  <input type="number" 
+         class="form-control"
+         ng-model="age" />
+</div>
+<div>
+  <span>The Year: </span>
+  <p class="input-group">
+    <input type="text" 
+           class="form-control" 
+           uib-datepicker-popup="{{dateFormat}}" 
+           ng-model="year" 
+           is-open="yearIsOpen" 
+           datepicker-mode="'year'" 
+           year-rows="5" 
+           year-columns="5" 
+           show-button-bar="false" />
+    <span class="input-group-btn">
+      <button type="button" 
+              class="btn btn-default" 
+              ng-click="openYear()">
+        <i class="fa fa-calendar"></i>
+      </button>
+    </span>
+  </p>
+</div>
+<div>
+  <button class="btn btn-default pull-right" ng-click="getLifetimes()">Lifetimes Ago</button>
+</div>
+<div class="lifetimes-container">
+  <span ng-hide="lifetimes === undefined">{{lifetimes}}</span>
+</div>

@@ -1,7 +1,8 @@
 sudo: false
 language: node_js
 node_js:
-  - '4.1.1'
+- 4.1.1
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'npm install && bower install'
+- gem install compass
+- npm install -g bower grunt-cli
+- npm install && bower install

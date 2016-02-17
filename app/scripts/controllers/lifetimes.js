@@ -25,7 +25,7 @@ angular.module('lifetimesApp')
         return;
       }
       var years = moment().diff(moment(new Date(scope.year)), 'years');
-      scope.lifetimes = roundDecimals(years / scope.age, 3);
+      scope.lifetimes = roundDecimals(years / scope.age, 1);
     };
 
     function roundDecimals(num, places) {

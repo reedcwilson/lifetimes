@@ -27,6 +27,6 @@ describe('Controller: LifetimesCtrl', function () {
     scope.year = "Sat Jan 01 1820 00:00:00 GMT-0700 (MST)";
     scope.age = 27;
     scope.getLifetimes();
-    expect(scope.lifetimes).toBe(7.259);
+    expect(scope.lifetimes).toBe(7.3);
   });
 });

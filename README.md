@@ -1,5 +1,7 @@
 # lifetimes
 
+[![Build Status](https://travis-ci.org/reedcwilson/lifetimes.svg?branch=master)](https://travis-ci.org/reedcwilson/lifetimes)
+
 An application to help you appreciate how long ago something was based on how
 many lifetimes ago it would be for you.
 
